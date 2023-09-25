@@ -1,0 +1,100 @@
+body{ /* onde vou definir o estilo do meu body*/
+    background-color: rgb(34, 34, 34); /* aqui no background posso alterar a cor, ou seja o fundo do meu site/landing page,*/
+    color: white; /* esse colo muda a cor da escrita do meu site*/
+    font-family: poppinsregular; /*aqui no font family defino a fonte a ser usada por todo meu body que no caso foi uma que baixei e consegui dar acesso atraves do fonts.css */
+    max-width: 1200px; /* aqui eu escolho a "espeçura" onde limito o meu body em relação ao tamanho geral do site*/
+    margin: 0% auto; /* aqui coloco a margem que eu quero do meu body em relação ao max width*/
+    padding: 15px; /* no padding ja defino a distancia do conteudo com as bordas*/
+}
+header{ /* onde vou definir o estilo do meu header*/
+    display: flex; /* aqui defino que meu display, minha tela vai estar em apenas uma direção*/
+    flex-direction: row; /* aqui eu escolhi a direção dela que é em horizontal*/
+    justify-content: space-between; /* aqui eu alinho os meus itens */
+    align-items: center; /* aqui eu digo que o alinhamento dos meus itens é o centro do header*/
+}
+#title{ /* aqui eu chamo meu titulo para editar*/
+    flex-direction: column; /* defino que que agora a direção do meu titulo fica em vertical, como colunas*/
+    line-height: 10px; /* aqui é a distancia entre eles*/
+}
+
+li{ /* onde vou definir o estilo dos meus elementos*/
+    display: inline-block; /*eefine os elementos li como inline block para ficarem na mesma linha */
+    margin: 20px; /* define a margem em todos os lados do elemento */
+}
+
+a{ /* define o estilo dos meus botoes do header */
+    color: rgb(255, 255, 255); /* aqui defino uma cor de letra para todos eles */
+}
+
+a:hover{ /* define o estilo dos meus botoes ao passar o mouse em cima */
+    color: rgb(39,146,165); /* definindo a cor qnd passa o mouse*/
+    transition: 0.3 all; /* aqui colocando uma transição para não ficar tipo muito brusco e rapido quando passar o mouse, para dar uma "suavidade"*/
+}
+
+#entrar-btn{ /* definindo o estilo do meu botao destaque do header*/
+    border: 2px solid rgb(39, 146, 165); /* defini uma borda com uma cor legal*/
+    padding: 10px; /* aqui a distancia do que vai estar escrito no botão das bordas */
+    border-radius: 15px; /* aqui eu defino um arredondamento das bordas */
+}
+
+#entrar-btn:hover{ /* aqui defino como vai ser quando eu passar o mouse pelo botao de destaque */
+    background-color: rgb(39,146,165); /* aqui eu defino que a cor de fundo do botao vai mudar */
+    color: white; /* aqui eu defino que a cor da letra tambem na hora que passar o mouse por cima */
+}
+
+h1{ /* aqui defino meus textos do h1 e seus elemetntos */
+    font-weight: 200; /* define a espeçura/peso da fonte no texto */
+}
+
+main{
+    display: flex; /*defino que meu main vai ter uma direção*/
+    flex-direction: row; /* defino que a direção vai ser horizontal*/
+    margin-top: 50px; /*adiciono uma margem para o meu main não ficar grudado no header*/
+}
+
+h2{ /* meu texto do meu main */
+    font-size: 56px; /* defino o tamanho da minha fonte */
+    line-height: 10px; /* a altura dela */
+    font-family: poppinsmedium; /* escolho o tipo de fonte que vai dentro do meu main */
+}
+
+span{ /* onde estilizo a parte especifica do texto */
+    color: rgb(39, 146, 165); /* a cor do texto */
+}
+
+p{ /* onde estilizo o meu paragrafo */
+    line-height: 20px; /*mesmo caso dos de cima mas apenas para o meu paragrafo*/
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+image{ /*aqui vou definir o tamanho da minha imagem */
+    width: 600px;
+}
+
+form{ /* estilização do form */
+    display: flex; /* mesmo caso que os anteriores */
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{ /* aqui defino como vai ser o meu botao de submit, que fica em destaque na landing page, colocando uma cor de fundo, cor diferente p letra etc como fiz nos outros casos*/
+    height: 50px;
+    width: 50%;
+    background-color: rgb(39,146,165);
+    color: white;
+    font-weight: bold;
+}
+
+form[type="submit"]:hover{ /* vou definir como ficara quando passar o cursos em cima do botao igual ao meu botao de destaque do header */
+    cursor: pointer;
+}
+
+input{ /* aqui são as definições do meu forms parte estilização de onde fica os textos email, nome... como nos outros defino uma margin top para ter um espaço entre eles, a altura deles, o padding de distancia, a borda arredondada, e o tamanho da font que vai dentro */
+    margin-top: 20px; 
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15pSx;
+}
