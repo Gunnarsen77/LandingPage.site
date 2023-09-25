@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- quis um header basico com 2 tipos de coisa, uma o nome da marca e do outro lado os botoes q abrem outras paginas (obs não fiz as outras paginas ainda, é um exemplo caso o site va para o ar msm) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css"> <!-- codigo onde da acesso ao css, o rel escrito stylesheet é escrito ass para determinar que é a pagina estilizada e o href é o caminho para chegar no css -->
+    <link rel="stylesheet" href="./styles/fonts.css"> <!-- mesma coisa que o de cima -->
+    <title>Landing Page</title>
+</head>
+<body>
+    <header> <!-- aqui dentro criei uma div para deixar separado meu titulo principal do landing dos "botoes" que dao acesso a outras paginas e assim editar melhor no css-->
+        <div id="title"> <!-- aqui sao meus titulos principais do landing -->
+            <h1>Arthur</h1>
+            <h1>LapTops</h1>
+        </div>
+        <ul> <!-- aqui coloco o ul e o <a para poder fazer com que sejam clicks e não topicos de texto e para que fiquem funcionais -->
+            <a href="./Modelos.html"><li>Modelos</li></a>
+            <a href="./contato.html"><li>Contato</li></a>
+            <a href="./Entrar.html" id="entrar-btn"><li>já tem uma conta?</li></a> <!-- esse href fica um pouco diferente, pois é um botao, e para ele ter funcionalidade damos um id para ele, assim ele identifica que tem uma ação -->
+    </header>
+    <main>
+        <aside>
+            <h2><span>Linha Premium</span></h2> <!-- h2 é unde fica meus textos secundários -->
+            <h2>Latitude DELL 7430</h2>
+            <p> Trabalhe com confiança em qualquer lugar usando o menor laptop comercial premium de 14" do mundo. Mais opções premium oferecem uma experiência de tela incrível, desempenho inteligente, segurança integrada e privacidade.
+            </p> <!-- aqui é onde coloquei <p que é para paragrafo que coloquei como "propaganda" que chame atenção em relação ao computador q coloquei a imagem ao lado -->
+            <form> <!-- aqui pude criar um formulário como foi mostrado em aula, escolhi que o usuario possa preencher apenas com o nome e o email -->
+                <input type="text" placeholder="Nome"> <!-- o input tipo texto permite que o usuario preencha e envie o nome, o placheholder é onde escrevo oq fica dentro da opção, para o usuario saber o que preencher -->
+                <input type="email" placeholder="E-mail">
+                <input type="submit" value="Enviar >"> <!-- aqui na parte do button ele fica diferente pq o submit não tem como alterar o nome que fica dentro, então damos um value e assim meu botao pode ter qualquer nome -->
+            </form>
+        </aside> <!-- aqui crio um aside para poder colocar a minha imagem e poder ficar separado do main que vai o envio do meu forms -->
+        <article>
+            <img src="components/image/0bb65589-c675-4dd1-ad55-e8dbbd3a2c8b.png" alt="latitude7430"> <!-- aqui o src vai procurar onde eu coloquei a imagem, mas dando o caminho total ate chegar na imagem dentro das pastas -->
+        </article>
+    </main> <!-- aqui termino meu main que fica no meio da landing page -->
+</body> <!-- aqui termino meu body que envolve todo o conteudo -->
+</html>
