@@ -112,6 +112,11 @@ input{ /* aqui são as definições do meu forms parte estilização de onde fic
         font-size: 38px;
     }
 
+    aside{
+        margin: 0 auto
+        width 100%;
+    }    
+
     form{
         margin: 0 auto
         width 100%;
@@ -122,8 +127,7 @@ input{ /* aqui são as definições do meu forms parte estilização de onde fic
     }
 
     main img {
-    max-width: 100%;
-    height: auto;
+    background: none;
 }
 
     ul{
