@@ -99,7 +99,7 @@ input{ /* aqui são as definições do meu forms parte estilização de onde fic
     font-size: 15pSx;
 }
 
-@media screen and (max-width 768px) {
+@media  screen and (max-width: 760px){ /* parte onde deixo meu site responsivo, posso edita-lo para caber em qualquer formato*/
     header{
         flex-direction: column;
     }
@@ -129,4 +129,4 @@ input{ /* aqui são as definições do meu forms parte estilização de onde fic
     ul{
         text-align: center;
     }
-}  
+}
