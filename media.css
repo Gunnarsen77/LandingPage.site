@@ -31,7 +31,11 @@
 }
 
 @media (min-width: 769px) {
- main {
+    header {
+        flex-direction: column;
+    }
+    
+    main {
         flex-direction: column;
     }
 
