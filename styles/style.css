@@ -98,3 +98,35 @@ input{ /* aqui são as definições do meu forms parte estilização de onde fic
     border: none;
     font-size: 15pSx;
 }
+
+@media screen and (max-width 768px) {
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    form{
+        margin: 0 auto
+        width 100%;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    main img {
+    max-width: 100%;
+    height: auto;
+}
+
+    ul{
+        text-align: center;
+    }
+}  
